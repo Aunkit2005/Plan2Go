@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  background-image: url(pexels-nurseryart-346885.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: antiquewhite; */
+  align-items: center;
+  /* padding: 40px 10px; */
+  border-bottom: 1.2px solid black;
+  /* position: fixed; */
+}
+.nav .logo {
+  font-size: 2.3vw;
+  padding: 1vw 3vw;
+  font-weight: 700;
+}
+.nav-part2 ul {
+  display: flex;
+  /* background-color: rgb(124, 124, 217); */
+  /* align-items: center; */
+  padding: 1vw;
+  margin: 2vw;
+}
+.nav-part2 ul li a {
+  padding: 1vw 3vw;
+  font-size: 1.5vw;
+  color: black;
+}
+.nav-part2 ul li a:hover {
+  color: aquamarine;
+}
+.nav-part2 i {
+  display: none;
+}
+.content {
+  width: 100%;
+  height: calc(100% - 100px);
+  /* background-color: aquamarine; */
+  display: flex;
+  position: relative;
+}
+.left {
+  width: 50%;
+  height: 100%;
+  /* background-color: red; */
+  padding: 2vw 4vw;
+}
+.left h2 {
+  font-size: 4vw;
+  font-weight: 700;
+  /* line-height: 3.9vw; */
+}
+.left p {
+  font-size: 1.5vw;
+  padding: 2.2vw 1vw;
+}
+.left button {
+  font-size: 1.5vw;
+  padding: 1vw 2vw;
+  margin: 2vw;
+  border-radius: 30px;
+  background: transparent;
+}
+.left button:hover {
+  background-color: aquamarine;
+  font-weight: 700;
+}
+.right {
+  width: 50%;
+  height: 100%;
+  /* background-color: royalblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 10vw;
+}
+form {
+  background: transparent;
+  /* border: 2px solid white; */
+}
+form h3 {
+  font-size: 3vw;
+}
+form input {
+  font-weight: 600;
+  padding: 1vw 2vw;
+  margin: 1vw 2.3vw;
+  border-radius: 10px;
+  border-radius: 1px solid black;
+  background: transparent;
+}
+form button {
+  padding: 1vw 1.2vw;
+  margin: 1vw 2.3vw;
+  border-radius: 20px;
+  border: 1px solid black;
+  background: transparent;
+  font-weight: 600;
+}
+form input:hover {
+  background-color: rgb(62, 194, 187);
+  color: black;
+}
+form button:hover {
+  background-color: rgb(161, 240, 240);
+  font-weight: 900;
+}
+.footer{
+  background-color: rgb(198, 198, 187);
+  width: 100%;
+  height: 150px;
+  /* padding: 5vw; */
+  /* display: flex; */
+}
+.social{
+  display: flex;
+  justify-content: center;
+  /* padding: 2vw; */
+}
+.social i{
+  padding: 1.5vw;
+  font-size: 1.8vw;
+}
+.social i:hover{
+border-radius: 50%;
+background-color: white;
+}
+.footer-nav ul{
+  display: flex;
+  justify-content: center;
+}
+.footer-nav ul li{
+  list-style: none;
+}
+.footer-nav ul li a{
+  padding: 2vw;
+  color: black;
+  font-size: 1.3vw;
+}
+.footer-nav ul li a:hover{
+  text-decoration: underline;
+  color: orangered;
+}
+.copy{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(198, 198, 187);
+  height: auto;
+  padding: 1vw;
+  position: relative;
+  bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    width: 100%;
+    height: 70px;
+  }
+  .nav-part2 {
+    padding-bottom: 4vw;
+  }
+  .nav-part2 ul li a{
+    display: none;
+  }
+  .nav-part2 i {
+    display: inline-block;
+    font-size: 5vw;
+    font-weight: 600;
+    padding: 3vw 4vw;
+  }
+  .nav-part2 i:hover{
+    color: rgb(73, 108, 161);
+  }
+  .nav .logo {
+    font-size: 6vw;
+    padding-top: 4vw;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    width: 100%;
+    height: calc(100% - 70px);
+  }
+  .left {
+    width: 100%;
+    height: 45%;
+  }
+  .left h2 {
+    font-size: 7vw;
+    margin-top: 3vw;
+  }
+  .left p {
+    font-size: 4vw;
+    margin-top: 3vw;
+  }
+  .left button {
+    font-size: 4vw;
+  }
+  .right {
+    width: 100%;
+    height: 55%;
+  }
+  
+  form h3 {
+    /* margin-top: 0; */
+    font-size: 7vw;
+  }
+  form input {
+    margin: 2vw;
+    /* color: white; */
+  }
+  .footer-nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-nav ul li a{
+    font-size: 3vw;
+    padding: 6vw;
+  }
+  .social i{
+    font-size: 4vw;
+  }
+}
